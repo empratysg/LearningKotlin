@@ -5,7 +5,7 @@ package huongnt.kotlin.learn.basic.returnjump
  */
 fun main(args: Array<String>) {
     val br = BreakAndContinue()
-    val va=br.foo(listOf<Int>(1,2,3,4,5,6,7,8,9))
+    val va = br.foo(listOf<Int>(1, 2, 3, 4, 5, 6, 7, 8, 9))
     println(va)
 }
 
@@ -34,7 +34,7 @@ class BreakAndContinue {
     /**
      * cant understand
      */
-    fun returnAtLabels(ints:Array<Int>):Int{
+    fun returnAtLabels(ints: Array<Int>): Int {
         ints.forEach {
             if (it == 0) return@returnAtLabels it
             println(it)
@@ -51,6 +51,7 @@ class BreakAndContinue {
         }
         return 1
     }
+
     fun foo(ints: List<Int>) {
         ints.forEach {
             if (it == 0) return

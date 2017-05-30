@@ -13,5 +13,5 @@ fun baz() {}
  * import huongnt.kotlin.learn.basic.packages.PackageDemo as pd
  *  pd stands for 'huongnt.kotlin.learn.basic.packages.PackageDemo'
  */
-class PackageDemo{
+class PackageDemo {
 }

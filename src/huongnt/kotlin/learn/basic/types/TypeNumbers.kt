@@ -20,7 +20,7 @@ class TypeNumbers {
      * but if v = 10 will print 'true'
      * v = 10000 will print 'false'
      */
-    fun representation(){
+    fun representation() {
         val v: Int = 10000
         val v1: Int? = v
         val v2: Int? = v
@@ -30,7 +30,7 @@ class TypeNumbers {
     /**
      * Due to different representations, smaller types are not subtypes of bigger ones
      */
-    fun explicitConversions(){
+    fun explicitConversions() {
         val b: Byte = 1 // OK, literals are checked statically
 //        val i: Int = b // ERROR
         val i: Int = b.toInt() // OK: explicitly widened
@@ -48,7 +48,7 @@ class TypeNumbers {
      * xor(bits) – bitwise xor
      * inv() – bitwise inversion
      */
-    fun operations(){
+    fun operations() {
         val x = (1 shl 2) and 0x000FF000
         println(x.toString())
     }

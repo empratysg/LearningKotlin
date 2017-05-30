@@ -10,7 +10,7 @@ class TypeArrays {
 
     val arrs: Array<Int> = arrayOf(1, 2, 3, 4, 5)
     val byteArr: ByteArray = ByteArray(10) // ByteArray , ShortArray ,IntArray and so on
-    val arrAnys:Array<Any> =  arrayOf(1, 'a', true, "text")
+    val arrAnys: Array<Any> = arrayOf(1, 'a', true, "text")
 
     /**
      * arrays in Kotlin are invariant

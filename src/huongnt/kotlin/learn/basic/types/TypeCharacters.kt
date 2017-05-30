@@ -10,7 +10,7 @@ package huongnt.kotlin.learn.basic.types
  *      }
  * }
  */
-class TypeCharacters{
+class TypeCharacters {
     /**
      * @param c character
      */
@@ -20,7 +20,7 @@ class TypeCharacters{
         return c.toInt() - '0'.toInt() // Explicit conversions to numbers
     }
 
-    fun representation(){
+    fun representation() {
         val v: Char = '\"'
         val v1: Char? = v
         v1?.inc()

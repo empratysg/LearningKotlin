@@ -6,7 +6,7 @@ package huongnt.kotlin.learn.basic.types
  * - escaped strings
  * - raw strings
  */
-class TypeStrings{
+class TypeStrings {
     val escapedStr = "Hello, world!\n- oh"
     val rawStr = """
         fun main(args: Array<String>){
@@ -20,19 +20,19 @@ class TypeStrings{
 |(Benjamin Franklin)
 """.trimMargin()
 
-    fun display(){
+    fun display() {
         println(escapedStr)
         println(rawStr)
         println(text)
     }
 
-    fun stringTemplates(){
+    fun stringTemplates() {
         val i = 10
         val s = "i = $i" // evaluates to "i = 10"
         println(s)
 
         val t = "price"
-        val text =  "$t.length is ${t.length}"
+        val text = "$t.length is ${t.length}"
         println(text)
 
         val price = """$t: $9.99"""

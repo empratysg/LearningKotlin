@@ -56,8 +56,8 @@ class Customer public @SinceKotlin("1.1") constructor(name: String = "huhu") {}
 open class ParentClass(val number: Int) {
     open var x: Int
         get() {
-        return 10
-    } set(value: Int) {
+            return 10
+        } set(value: Int) {
         value * 10
     }
 
@@ -71,6 +71,7 @@ class childClass : ParentClass {
     override var x: Int
         get() = super.x
         set(value) {}
+
     constructor(number: Int) : super(number)
 
     constructor(number: Int, str: String) : super(number, str) {
@@ -85,19 +86,32 @@ class childClass : ParentClass {
 open class Base {
     open fun f() {}
 }
+
 abstract class Derived : Base() {
     override abstract fun f()
 }
 
 
 open class A {
-    open fun f() { print("A") }
-    fun a() { print("a") }
+    open fun f() {
+        print("A")
+    }
+
+    fun a() {
+        print("a")
+    }
 }
+
 interface B {
-    fun f() { print("B") } // interface members are 'open' by default
-    fun b() { print("b") }
+    fun f() {
+        print("B")
+    } // interface members are 'open' by default
+
+    fun b() {
+        print("b")
+    }
 }
+
 class C() : A(), B {
     // The compiler requires f() to be overridden:
     override fun f() {
